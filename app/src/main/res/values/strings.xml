@@ -1,0 +1,523 @@
+<resources>
+    <string name="tab_text_1" translatable="false">Tab 1</string>
+    <string name="tab_text_2" translatable="false">Tab 2</string>
+    <!-- Globals -->
+    <string name="basePath" translatable="false">https://www.bitrittobonus.com</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="imagesPath" translatable="false">/images/images/</string>
+    <string name="savingok">Saving OK</string>
+    <!-- DialogButtons -->
+    <string name="dialogNegativeButton">I\'M SURE</string>
+    <string name="dialogPositiveButton">RETRY</string>
+    <string name="dialogYES">YES</string>
+    <string name="dialogNO">NO</string>
+    <string name="dialogTitleElementDelete">deletion of the element</string>
+    <string name="dialogDescriptionElementDelete">Do you really want to delete this element?</string>
+    <string name="dialogIMSURE">I\'M SURE</string>
+    <string name="dialogCANCEL"><![CDATA[CANCEL]]></string>
+    <string name="dialog_wait">Loading …</string>
+
+    <!-- Splash -->
+    <string name="splash">splash image</string>
+
+    <!--Login-->
+    <string name="app_name">Shifts Caledar Loyalty Cards</string>
+    <string name="page_login_name">Login Shifts Caledar</string>
+    <string name="login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="first_access">First Access?</string>
+    <string name="register">Register</string>
+    <string name="password_lost">Password lost?</string>
+    <string name="recover_button">Recover password</string>
+    <string name="loginnok">E-mail or password wrong</string>
+    <string name="autoLogin">Automatic login executed</string>
+    <string name="loginExecuted">Login executed</string>
+    <string name="ServerLost">Server Lost</string>
+
+    <!--LoginActivity-->
+    <string name="can_not_connect">Cannot connect</string>
+    <string name="there_is_no_internet_connection">There is no internet connection</string>
+    <string name="login_status">Login Status</string>
+
+    <!--messages email-->
+    <string name="email_extension_wrong">The length of extension it\'s wrong</string>
+    <string name="email_without_at">The email don\'t contain @</string>
+    <string name="email_without_dot">The email don\'t contain dot</string>
+    <string name="email_wrong_format">The email format is wrong</string>
+    <string name="email_illegal_spaces">The email contain spaces</string>
+    <string name="email_illegal_char">The email contain illegal characters</string>
+    <!--messages password-->
+    <string name="password_illegal_char">Wrong format, you need 1 digit lower, upper and special @#$%^!&amp;</string>
+    <string name="password_extension_wrong">The length of password is less then 8 char </string>
+    <string name="password_illegal_spaces">The password contain spaces</string>
+    <!--messages date-->
+    <string name="password_illegal_date">The right format is DD/MM/YYYY</string>
+    <!--messages currency-->
+    <string name="password_illegal_currency">The right format is 9999.99</string>
+    <string name="password_illegal_currency_dot">We need a comma</string>
+    <!--messages Volley-->
+    <string name="data_loading_failed">Data loading failed</string>
+    <string name="image_loading_failed">Image loading failed</string>
+    <string name="data_saving_failed">Data saving failed</string>
+    <!--RegisterActivity-->
+    <string name="registration_impossible">Registration impossible</string>
+    <string name="all_terms_necessary">, you need to accept all terms</string>
+    <string name="registration_status">Registration Status</string>
+
+    <!--Register-->
+    <string name="page_register_name">BitrittoBonus Register</string>
+    <string name="terms_of_use">Term of use</string>
+    <string name="general_cond">General conditions</string>
+    <string name="read_me">Read me</string>
+    <string name="policy_privacy">Policy privacy</string>
+    <string name="rememb_problem">There has been a problem saving the password on your device, you\'ll have to do the login manually the next time</string>
+
+    <!-- Home Tab Strings -->
+    <string name="Home">Home</string>
+
+    <!-- Profile Strings -->
+    <string name="Profile">Profile</string>
+    <string name="emailProfile">E-mail</string>
+    <string name="emailProfileIsPublic">Show to everybody your e-mail</string>
+    <string name="informationProfile">This information is stored locally and will only be sent when needed</string>
+    <string name="sendProfileSwitch">You want to remotely store this information</string>
+
+    <!-- Settings Tab Strings -->
+    <string name="Settings">Settings</string>
+    <string name="SettingsListProfile">Profile</string>
+    <string name="SettingsListUserProfile">User Profile</string>
+    <string name="settings_list_cells_style">Edit shift</string>
+    <string name="settings_list_cards">Cards</string>
+    <string name="SettingsListMakeShifts">Make shifts</string>
+    <string name="SettingsListLogout">Logout</string>
+    <string name="SettingsListExit">Exit</string>
+    <string name="SettingsListAuth">App Authorizations</string>
+    <string name="privacyInfo">Privacy Information</string>
+    <string name="instructions">Instructions</string>
+    <string name="str_new">New</string>
+    <string name="about">About</string>
+    <string name="about_version">About version</string>
+    <string name="version">Version</string>
+    <string name="instruction_string">"In this section you will find general instructions for the menu, for more detailed instructions consult the dedicated sections inside.
+
+Cards
+Management and display of Loyalty Cards and Cards
+
+Edit shifts
+From this setting it is possible to add or remove individual shift times.
+
+Make shifts rotation
+From this setting it is possible to create the rotation of shifts in the desired year or period.
+It is possible to have different shifts in different periods.
+
+Instruction
+This Window
+
+Backup
+From here you can save a copy of all application data inside the device.
+
+Restore
+This setting allows you to retrieve previously stored application data.
+
+About version
+From here you can check the various updates of the application.
+
+Credits
+This option allows you to view any rights of third-party program authors.
+
+App permissions
+From here you can access the permissions granted on your device.
+
+Privacy information
+This section contains all information relating to privacy.
+
+Exit
+With this button you quit the application."</string>
+    <string name="cards_string">"In this window you can add cards and Green Cards or search for a card.
+
+Search
+To search for a card, enter the letters contained in the search box, the filter is automatic.
+
+Add
+It is possible to add a card to the list using the button next to the question mark with three dashes and +.
+
+Delete
+To delete an element from the list, swipe the element to the left.
+
+Sort
+To sort the list, hold down the item and move it to the desired position.
+
+Modify
+To edit an item or view photos simply touch an item in the list, the edit window will open."</string>
+    <string name="latest_update_string">"
+Cumulative update to 2024 to comply with Play Store policies
+"</string>
+    <string name="latest_update_note">"To review this message and all application updates check in the 'Settings' - 'About Version' section"</string>
+    <string name="about_string">"
+Ver. 8.01
+* Cumulative update to 2024 to comply with Play Store policies
+
+Ver. 8.00
+* Cumulative update to 2023 to comply with Play Store policies
+
+Ver. 7.04
+* It is no longer possible to save cards without having given the name to it.
+* The UPC-A format barcode reading error has been corrected.
+* Added the ability to change the font size in the calendar.
+
+Ver. 7.03
+* The menu for automatically creating annual holidays has been added to the main window.
+* Monthly statistics have been added, you will be able to more easily check permits and overtime.
+
+Ver. 7.02
+* All buttons have been integrated into the top bar
+* Statistics have been added (window only)
+* The descriptions of the side menu have been shortened
+* Card animations have been optimized
+
+Ver. 7.01
+* Completely modified the graphic interface by creating the navigation menu
+* Added left and right scrolling to change months
+* Minority bugs fixed
+
+Ver. 6.62
+* Fixed visibility cards in edit mode
+
+Ver. 6.61
+* Fixed crash when swiping left
+* Added revision notes to application update
+
+Ver. 6.6
+* The display modalities of the cards have been corrected
+* Added the deletion of notes directly in the menu
+* Note, Overtime and Permit flags update instantly.
+
+Ver. 6.5
+* The ability to upload photos from the gallery has been added to the Loyalty Cards.
+* The problem of immediate saving of 'Long Description' and 'Short Description' in 'Edit Shifts' has been resolved.
+* Fixed 'Long Description' deletion with empty 'Short Description' in the shift list.
+* Added titles to all info windows.
+
+Ver. 6.4
+* Shifts even if canceled remain in the calendar.
+* The possibility of storing cards locally has been added.
+* Moved OK information dialogs.
+* Increased visibility of notes.
+* Fixed problem of not displaying multi-lines in notes.
+* Fixed problem of possible note modification after selection change.
+* Added automatic cell selection to the long click on the calendar.
+* Added information windows on the various app tabs.
+* Added privacy window before accessing the room.
+* Added privacy button in the menu.
+
+Ver. 6.3
+* Added automatic restart to manual upload of backups.
+* Added automatic backup on uninstall.
+* Added external access for saving files.
+* Added check of dates before shifts creation.
+* Added manual backup and restore.
+* Fixed bug of overwriting new shifts.
+
+Ver. 6.2
+* modified shift rotation creation dialog.
+
+Ver. 6.1
+* Added backup and restore menus (not active).
+* Added shift rotation creation dialog.
+
+Ver. 6.0
+* Added description information.
+* Fixed the English version.
+* Fixed sequence reset in case of elimination of all rotation turns.
+
+Ver. 5.0
+* Information and Credits menu added in Settings.
+* Fixed bug in inserting new shifts higher than the tenth.
+* Fixed possible crash in case of wrong shift reading in shift creation.
+* Fixed possible crash in case of wrong shift reading in main.
+
+Ver. 4.0
+* Added overtime and holidays. "</string>
+    <string name="latest_update_title">Latest updates</string>
+    <string name="title_mca_string">"In this window you can add and edit card data.
+
+Description
+Enter a full description for the card, it will be displayed in the list.
+
+View the photo
+If you are only viewing the photos you can open the original photo by clicking on it.
+
+Change your card
+Click on the button with the pencil to enable the changes.
+
+add a photo
+Click on 'camera photo' to take a photo.
+
+Add a Barcode or QR Code
+Click on the dedicated button to acquire a Barcode or QR Code
+
+Orient the photo
+Click on the circular arrows to orient the photo at will.
+
+Save your changes
+Click on the disk to save. "</string>
+    <string name="credits">Credits</string>
+    <string name="credits_string">"Some of the icons used are available for free under the gpl license from Fontawesome"</string>
+
+
+    <string name="make_shift_string">"In this window it is possible to generate the time sequence of the shifts.
+
+In the list on the left is the sequence of rotation of the shifts.
+In the list on the right is the list of available shift styles.
+Clicking on an element in the left column will remove the touched element, while clicking on an element in the right column will add the touched element to the left column.
+
+Default sequence
+At the first start, the application has preset a three-week shift with reverse scrolling.
+The first week is set as 06-14 shift with Saturday and Sunday off, the second week is 22-06 shift with Saturday and Sunday off, the third week is preset as 14-22 shift with Saturday and Sunday off.
+If you have a shifts of this type, it is sufficient that you set the first 06-14 as the starting date and any day as the final date, the software will automatically set the entire period with the shifts.
+
+Sequence generation
+Suppose we want to create a two-day shift with a 6-14 shift and an empty shift.
+A shift of this type is called sliding because it does not last seven days.
+1) Always clicking on the elements of the left column we remove all the elements;
+2) Click in the left column twice on the 06-14 shift and once on the empty shift;
+3) We modify the initial and final date of the shift considering that
+the first day selected will be the one with which we start the shift 06-14. "</string>
+    <string name="style_text">"In this window it is possible to add, remove or modify individual shift times.
+Styles are used to generate style-based turn rotations.
+For example, in the rotation of shifts it will be possible to add a model style to the week.
+By clicking on the line of the shift concerned, it will be possible to change the style of the single shift.
+
+New style
+To create a new turn style click on the button with the three dashes and the plus.
+
+Modification / deletion
+To modify / delete it click on the turn and find the icon to delete it (trash can icon). "</string>
+    <string name="stats_text">"In this window it is possible to check the statistics relating to shifts.
+It is possible to move between the months using the arrows at the top or choose a date from the calendar using the month."</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="reminder">Reminder</string>
+    <string name="all_settings">All</string>
+    <string name="shift_rotations">Only the shifts rotations</string>
+    <string name="shift_rotations_with_leaves">Shifts rotations with leaves, overworks and notes</string>
+    <string name="all_appsettings">All the settings</string>
+    <string name="appsettings">Only the application settings</string>
+    <string name="general_settings">Only the general settings</string>
+    <string name="rotation_settings">Only the rotation list</string>
+    <string name="leaves_settings">Only the list of leaves</string>
+    <string name="styles_settings">Only the list of shift styles</string>
+    <string name="year">YEAR</string>
+    <string name="backup_file">Backup file</string>
+    <string name="folder">Folder</string>
+    <string name="this_setting_is_empty">This setting is empty</string>
+    <string name="the_file">The file</string>
+    <string name="is_missing">is missing</string>
+    <string name="restored_file">Restored file</string>
+    <string name="qr_code">QR Code</string>
+    <string name="sync">Synchronize</string>
+
+
+    <!-- Permissions -->
+    <string name="PermissionDenied">Permission Denied</string>
+    <string name="negativeButtonString">I DON\'T WANT</string>
+    <string name="positiveButtonString">I ACCEPT</string>
+    <string name="privacyInfoAndOpp">For more information and to oppose the use of data send an email to condominioledimore@gmail.com.</string>
+    <!-- Permissions Storage saving -->
+    <string name="setREQUEST_WRITE_EXTERNAL_STORAGE">You must grant write permissions to store data</string>
+    <!-- Permissions Camera -->
+    <string name="permissionTitleCamera">Camera Permissions</string>
+    <string name="privacyDescriptionForCamera">"
+You must grant camera permissions to insert the photo.
+The images will only be stored locally on the device and will not be used for statistical purposes.
+
+The information taken from the camera has the function of taking the identification code of the Application in order to synchronize the devices.
+
+The camera through the ZXing Software fetches the App code which will be stored on a remote site.
+
+The code (generated randomly) will be used to generate end-to-end encrypted information exchange keys.
+
+Only the last exchange message between synchronized devices is stored on the server.
+
+Statistical analyzes on the quantity and quality of connections made in order to improve the service may be carried out."</string>
+    <!-- Permissions Storage reading  -->
+    <string name="setREQUEST_READ_EXTERNAL_STORAGE">You must grant permissions to read the external files</string>
+    <!-- fragment-home -->
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="home_day_default">15 Mag 2021</string>
+    <string name="home_note_default">Notes:</string>
+    <string name="home_text_scroll">Single click on cell to select, long click for see the options</string>
+    <string name="default_value_day" translatable="false">--\n</string>
+    <string name="string_note_def">Note:</string>
+    <string name="string_edit_note">Edit Note</string>
+    <string name="string_delete_note">Delete Note</string>
+    <string name="string_change_style">Change shift</string>
+    <string name="string_options">Options</string>
+    <string name="overwork">Overwork</string>
+    <string name="overwork_short">Overw.</string>
+    <string name="leave">Leave</string>
+    <string name="leave_short">Leave</string>
+    <string name="overwork_remove">Delete overwork</string>
+    <string name="leave_remove">Delete leave</string>
+    <string name="other">Other</string>
+    <string name="now">Now</string>
+    <!-- activity-styles -->
+    <string name="default_value_styles_title">Shift</string>
+    <string name="default_value_styles_text">--<br />blank</string>
+    <string name="default_value_styles_long_description">Void</string>
+    <string name="default_value_styles_range" translatable="false">06:00–14:00</string>
+    <string name="styles_lt_6_14">6–14 shift</string>
+    <string name="styles_st_6_14" translatable="false">--\n06-14</string>
+    <string name="styles_rg_6_14" translatable="false">06:00–14:00</string>
+    <string name="styles_lt_14_22">14–22 shift</string>
+    <string name="styles_st_14_22" translatable="false">--\n14-22</string>
+    <string name="styles_rg_14_22" translatable="false">14:00–22:00</string>
+    <string name="styles_lt_22_6">22–6 shift</string>
+    <string name="styles_st_22_6" translatable="false">--\n22-06</string>
+    <string name="styles_rg_22_6" translatable="false">22:00–00:06</string>
+    <string name="styles_sd_layoffs">layof</string>
+    <string name="styles_ld_layoffs">layoffs</string>
+    <string name="styles_sd_vacation">Vac</string>
+    <string name="styles_ld_vacation">Vacation</string>
+    <string name="styles_sd_holiday">Holi</string>
+    <string name="styles_ld_holiday">Holiday</string>
+    <string name="add_holiday">Add Holiday</string>
+    <string name="styles_sd_corporate_training">Train</string>
+    <string name="styles_ld_corporate_training">Corporate training</string>
+    <string name="styles_sd_cdp">PBOD</string>
+    <string name="styles_ld_cdp">provincial board of directors</string>
+    <string name="styles_sd_corporate_ptf">PTF A</string>
+    <string name="styles_ld_corporate_ptf">Corporate PTF</string>
+    <string name="styles_sd_corporate_vacation">C Vac</string>
+    <string name="styles_ld_corporate_vacation">Corporate vacation</string>
+    <string name="styles_sd_disease">Disea</string>
+    <string name="styles_ld_disease">Disease</string>
+    <string name="styles_sd_ptf">PTF</string>
+    <string name="styles_ld_ptf">PTF</string>
+    <string name="styles_sd_08_16">08–16</string>
+    <string name="styles_ld_08_16">8–16 shift</string>
+    <string name="styles_sd_00_06">00–06</string>
+    <string name="styles_ld_00_06">0–6 shift</string>
+    <string name="styles_sd_06_12">06–12</string>
+    <string name="styles_ld_06_12">6–12 shift</string>
+    <string name="styles_sd_12_18">12–18</string>
+    <string name="styles_ld_12_18">12–18 shift</string>
+    <string name="styles_sd_18_24">18–00</string>
+    <string name="styles_ld_18_24">18–24 shift</string>
+
+    <!-- Activity Styles modify -->
+    <string name="title_msa">Edit shifts</string>
+    <string name="msa_sd_title">Short description</string>
+    <string name="msa_sd_hint">Enter a short description</string>
+    <string name="msa_ld_title">Long description</string>
+    <string name="msa_ld_hint">Enter a complete description</string>
+    <string name="msa_sh_title">Shift start</string>
+    <string name="msa_she_title">Shift end</string>
+    <string name="msa_sh_hint">Hour select</string>
+    <string name="msa_time_start_title">Select Time</string>
+    <string name="msa_bc_title">Background color</string>
+    <string name="msa_bc_hint">Select</string>
+    <string name="msa_tc_title">Text color</string>
+    <string name="msa_bbc_title">Border color</string>
+    <string name="msa_ns_title">not statistic</string>
+    <string name="msa_wb_title">with break</string>
+    <string name="msa_bs_title">break hour start</string>
+    <string name="msa_be_title">break hour end</string>
+    <string name="msa_toast_saving_wait">Wait to Saving</string>
+    <string name="msa_toast_saving_ok">Saving OK</string>
+    <string name="msa_toast_saving_nok">Saving not OK, try again</string>
+    <string name="msa_toast_wait_deleting">Wait to deleting</string>
+    <string name="msa_toast_deleting_ok">Deleting OK</string>
+    <string name="msa_toast_deleting_na">Deleting denied for the last element</string>
+    <string name="msa_toast_deleting_nok">Deleting not OK, try again</string>
+    <string name="shiftLabel">Shift label</string>
+    <!-- Color picker -->
+    <string name="settings_default_color_confirm">OK</string>
+    <string name="settings_bg_color_dialog">OK</string>
+    <string name="settings_bg_color_confirm">OK</string>
+    <!-- Activity make shift -->
+    <string name="txt_make_shift_title">Make shift rotation</string>
+    <string name="txt_make_shift_rotation_instructions">Click on the elements on the bottom to remove it from the shift rotation</string>
+    <string name="txt_make_shift_rotation_instructions_right">Click on the elements on the bottom to add it on left list</string>
+    <string name="txt_make_shift_rotation_date_instructions">"The earliest date is the day the shift rotation generation starts, the default shift is 6–14"</string>
+    <string name="et_make_shift_description">Shift A rotation</string>
+    <string name="string_week_repeat">Week</string>
+    <string name="string_start_date_hint">Start\ndate</string>
+    <string name="string_end_date_hint">End\ndate</string>
+    <string name="string_check_dates">Check start and end date</string>
+    <string name="string_hint_rotation">This button creates a shift rotation, you can\'t come back after select OK, you override the old data</string>
+    <string name="string_start_date">10/06/2021</string>
+    <string name="string_end_date">11/06/2021</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_ok_cancel">OK/Cancel Dialog</string>
+    <!-- Activity leaves -->
+    <string name="el_title">Edit leave</string>
+    <string name="leave_desc">Leave PTF (PAID TIME OFF)</string>
+    <string name="compensatory_leave">Compensatory leave</string>
+    <string name="parental_leave">Parental leave</string>
+    <string name="bank_hours">Bank hours</string>
+    <string name="disability_permit">Disability permit</string>
+    <string name="unpaid_leave">Unpaid leave</string>
+    <string name="blood_donation">Blood donation</string>
+    <!-- Dialog hour selector -->
+    <string name="dhs_start_title">Hour start</string>
+    <string name="dhs_end_title">Hour end</string>
+    <string name="save">Save</string>
+    <string name="set_hour">You need to set the hours</string>
+    <!-- QRCode Dialog -->
+    <string name="titleSync">Start Synchronization</string>
+    <string name="messageSync">Do you want override the synchronization? You can\'t come back after select YES</string>
+    <string name="not_sync">Synchronization it\'s not possible</string>
+    <!-- Send Receive Toasts -->
+    <string name="server_offline">Server offline, try again</string>
+    <!-- Activity Modify Cards -->
+    <string name="title_mca">Cards Modify</string>
+    <string name="description">Description</string>
+    <string name="card_front">Card Front</string>
+    <string name="card_rear">Card Rear</string>
+    <string name="select_from_gallery">Select From Gallery</string>
+    <string name="take_a_picture">Take A Picture</string>
+    <string name="photo_rotate">Rotate photo</string>
+    <string name="or">Or</string>
+    <string name="filter">Filter</string>
+    <string name="alert">alert</string>
+    <string name="name_exist">The name already exists or you have not entered any name, you have to change the name and then you can save.</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string name="get_barcode">Acquire a Barcode</string>
+    <string name="get_qr_code">Acquire a QR Code</string>
+    <string name="barcode_or_qr_code">Barcode or QR Code</string>
+    <string name="stats">Stats</string>
+    <string name="leaves">Leaves</string>
+    <string name="days">Days</string>
+    <string name="day">Day</string>
+    <string name="main_text">"In this window you can view and edit the calendar data.
+Using the arrows or with the side scroll function it is possible to quickly change the month, by clicking on the text 'TODAY' you will be brought back to the current day, by clicking on the date it is possible to choose any date.
+from the side menu of the three dots it is possible to automatically generate holiday (if the Holiday Shift has not been canceled) and change the font size"</string>
+    <string name="holiday_missing">"Holiday style is missing, you need to set a long description shift equal to 'Holiday' in order to create annual holidays."</string>
+    <string name="font_size">Font size</string>
+    <string name="dialog_yes_no">Dialog yes no</string>
+    <string name="title_upca">UPC-A code detected</string>
+    <string name="mess_upca">"You need to visually check the card. Is the first visible digit on the card a zero?"</string>
+    <string name="missing_description">Missing description</string>
+    <string name="desc_save_nok">The card could not be saved because the description is missing</string>
+    <string name="desc_start_nok">Before starting, enter a description</string>
+
+</resources>

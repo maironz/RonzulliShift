@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".ModifyStylesActivity">
+    <RelativeLayout
+        android:id="@+id/title_msa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_msa_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/title_msa" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Head-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent"
+            android:orientation="horizontal"
+            android:padding="@dimen/icon_margin">
+
+            <EditText
+                android:id="@+id/tv_short_text1"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="3dp"
+                android:width="50dp"
+                android:background="@drawable/calendar_border_square_rounded"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/shiftLabel"
+                android:inputType="textMultiLine"
+                android:text="@string/styles_st_6_14"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="SpUsage,ContentDescription"
+                android:importantForAutofill="no" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_long_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/styles_lt_6_14"
+                    tools:ignore="SpUsage"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_range1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/styles_rg_6_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/border_square_rounded_app">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <!--Short Description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_sd_title"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/et_msa_short_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_sd_hint"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck,Autofill" />
+            </LinearLayout>
+            <!--Long Description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_ld_title"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/et_msa_long_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_ld_hint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck,Autofill" />
+            </LinearLayout>
+            <!--Shift start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_sh_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_shift_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_sh_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+            </LinearLayout>
+            <!--Shift end-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_she_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_shift_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_sh_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+            <!--Background color-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_bc_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_bc_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+            <!--text color-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_tc_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_bc_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+            <!--border color-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_bbc_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_border_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_bc_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+            <!--not statistic-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_ns_title"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/cb_msa_not_stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:minHeight="48dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+            <!--break hour start-->
+            <LinearLayout
+                android:id="@+id/ll_msa_break_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_bs_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_break_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_sh_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+            <!--break hour end-->
+            <LinearLayout
+                android:id="@+id/ll_msa_break_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_be_title"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bt_msa_break_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msa_sh_hint"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+            <!--with break-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/msa_wb_title"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/cb_msa_with_break"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:minHeight="48dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

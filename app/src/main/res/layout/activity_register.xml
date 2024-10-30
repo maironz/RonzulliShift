@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="RegisterActivity">
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/appbar_padding"
+        android:background="@color/primaryDarkColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/page_register_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label"
+        android:id="@+id/linear_layout_external"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/appbar_padding"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/text_email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_style_background"
+                    android:ems="13"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/appbar_padding" />
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/text_password"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_style_background"
+                        android:ems="30"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/appbar_padding" />
+
+                    <Button
+                        android:id="@+id/text_password_eye_button"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_no_eye"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/remember_me_check"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/item_style_background"
+                    android:buttonTint="@color/primaryDarkColor"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/remember_me"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/terms_of_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style_background"
+                        android:buttonTint="@color/primaryDarkColor"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/terms_of_use"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/terms_of_use_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:gravity="fill_vertical"
+                        android:paddingStart="10dp"
+                        android:textAllCaps="false"
+                        android:paddingEnd="0dp"
+                        android:text="@string/read_me"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textColorLink="@color/design_default_color_primary_dark"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/general_cond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style_background"
+                        android:buttonTint="@color/primaryDarkColor"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/general_cond"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/general_cond_link"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:gravity="fill_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/read_me"
+                        android:textAllCaps="false"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textColorLink="@color/design_default_color_primary_dark"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/policy_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style_background"
+                        android:buttonTint="@color/primaryDarkColor"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/policy_privacy"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/policy_privacy_link"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:gravity="fill_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/read_me"
+                        android:textAllCaps="false"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textColorLink="@color/design_default_color_primary_dark"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonRegister"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/primaryDarkColor"
+                    android:text="@string/register"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

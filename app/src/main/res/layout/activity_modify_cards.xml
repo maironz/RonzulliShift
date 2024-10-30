@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/ModifyCards"
+    tools:context=".ModifyCardsActivity">
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="200dp"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/title_msa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_mca_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/title_mca" />
+    </RelativeLayout>
+    <!--Description-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/icon_margin">
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/description"
+            android:textColor="#546E7A"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_card_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/msa_ld_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:maxLength="30"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck,Autofill" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/border_square_rounded_app">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/ll_codes"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/icon_margin"
+                android:background="@drawable/border_square_rounded_app">
+                <TextView
+                    android:id="@+id/tv_codes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/barcode_or_qr_code"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/get_barcode" />
+
+                <TextView
+                    android:id="@+id/lblBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_qr_code"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/lblBarcode1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btDelQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/tvScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="textNoSuggestions"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                <ImageView
+                    android:id="@+id/iQRCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+            <!--Card front-->
+            <LinearLayout
+                android:id="@+id/ll_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:background="@drawable/border_square_rounded_app"
+                android:padding="@dimen/icon_margin">
+
+                <TextView
+                    android:id="@+id/tvCardFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/card_front"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/photo_gallery_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_from_gallery"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+                <TextView
+                    android:id="@+id/lblFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+                <Button
+                    android:id="@+id/photo_select_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_a_picture"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/lblFront1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/photo_front_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_photo_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <ImageButton
+                        android:id="@+id/photo_rotate_front_left"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_rotate_left"
+                        android:contentDescription="@string/rotate_left"
+                        android:visibility="visible"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:id="@+id/photo_rotate_front_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_toStartOf="@+id/photo_rotate_front_right"
+                        android:layout_toEndOf="@+id/photo_rotate_front_left"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/photo_rotate"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/photo_rotate_front_right"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/ic_rot"
+                        android:contentDescription="@string/rotate_right"
+                        android:visibility="visible"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+                </RelativeLayout>
+                <!--Card Image front-->
+                <LinearLayout
+                    android:id="@+id/ll_image_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/icon_margin">
+
+                    <ImageView
+                        android:id="@+id/image_front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Card rear-->
+            <LinearLayout
+                android:id="@+id/ll_card_rear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_margin"
+                tools:ignore="TouchTargetSizeCheck"
+                android:background="@drawable/border_square_rounded_app">
+
+                <TextView
+                    android:id="@+id/tvCardRear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/card_rear"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/photo_gallery_rear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_from_gallery"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/lblRear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+                <Button
+                    android:id="@+id/photo_select_rear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_a_picture"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/lblRear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/photo_rear_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_photo_rear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <ImageButton
+                        android:id="@+id/photo_rotate_rear_left"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_rotate_left"
+                        android:contentDescription="@string/rotate_left"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/photo_rotate_rear_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_toStartOf="@+id/photo_rotate_rear_right"
+                        android:layout_toEndOf="@+id/photo_rotate_rear_left"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/photo_rotate"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/photo_rotate_rear_right"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/ic_rot"
+                        android:contentDescription="@string/rotate_right"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_image_rear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/icon_margin">
+                    <ImageView
+                        android:id="@+id/image_rear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--Card Image rear-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

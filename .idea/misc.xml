@@ -1,0 +1,58 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/drawable-anydpi/back-arrow.xml" value="0.86625" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/drawable-v24/side_nav_bar.xml" value="1.315" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/drawable-v24/splash.xml" value="0.78125" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/drawable/border_square_rounded_app.xml" value="0.12708333333333333" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/drawable/item_style_border_image_shop.xml" value="0.78125" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_cards.xml" value="0.75" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_edit_leave.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_login.xml" value="0.10185185185185185" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_main.xml" value="0.6596244131455399" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_main_drawer.xml" value="1.0979166666666667" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_main_new.xml" value="0.6838340486409156" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_make_shift.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_modify_cards.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_modify_styles.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_stats.xml" value="0.84875" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/activity_styles.xml" value="0.5" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/app_bar_main.xml" value="0.5854166666666667" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/cards.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/content_main.xml" value="0.7514563106796116" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/content_main_activity_new.xml" value="0.9725" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/dialog_about.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/dialog_char_size_spinner.xml" value="0.71" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/dialog_ok_cancel.xml" value="0.9" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/dialog_qr_code.xml" value="0.3296875" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/dialog_year_spinner.xml" value="0.71" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/dialog_yes_no.xml" value="0.6625" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/fragment_dialog_q_r_code.xml" value="0.3255208333333333" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/fragment_first.xml" value="0.9725" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/fragment_home.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/fragment_settings.xml" value="0.75" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/layout/nav_header_main.xml" value="0.6565420560747663" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/activity_main_drawer.xml" value="0.84875" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_cards.xml" value="0.8275" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_main.xml" value="0.9725" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_make_shift.xml" value="0.8275" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_modify_cards.xml" value="0.8275" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_mofify_styles.xml" value="0.8275" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_stats.xml" value="0.79125" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_styles.xml" value="0.8275" />
+        <entry key="..\:/AndroidProjects/TurniRonzulli/app/src/main/res/menu/menu_styless.xml" value="0.8275" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/CardsActivity"
+    tools:context=".CardsActivity">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_styles_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/settings_list_cards" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ac_filterbar"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:padding="10sp"
+            android:src="@drawable/ic_search"
+            tools:ignore="ContentDescription" />
+
+        <AutoCompleteTextView
+            android:id="@+id/ac_search_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/filter"
+            android:minHeight="48dp"
+            android:padding="10sp"
+            android:singleLine="true" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.AppCompat.NoActionBar"
+    android:id="@+id/activitySplash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/splash"
+        android:drawingCacheQuality="low"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        android:contentDescription="@string/splash" />
+</LinearLayout>

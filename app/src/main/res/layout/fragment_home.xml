@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+<LinearLayout
+    android:id="@+id/fragment_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scroll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/appbar_padding"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/home_text_scroll"
+            android:textColor="#616161" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Head-->
+        <RelativeLayout
+            android:id="@+id/calendar_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/buttonLeft"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_arrow_left"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_right"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/buttonCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/buttonRight"
+                android:layout_toEndOf="@+id/buttonCenterLeft"
+                android:background="@drawable/calendar_border_square_rounded"
+                android:text="@string/home_day_default" />
+
+            <Button
+                android:id="@+id/buttonCenterLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/buttonLeft"
+                android:background="@drawable/calendar_border_square_rounded"
+                android:text="@string/now" />
+        </RelativeLayout>
+
+        <!--Scroll area-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_below="@+id/calendar_head"
+            android:layout_above="@+id/calendar_bottom"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/calendar_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--Calendar-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:id="@+id/TableRow1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tV1"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Mon"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tV2"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Tue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tV3"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Wed"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tV4"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Thu"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tV5"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Fri"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tV6"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Sat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tV7"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/Sun"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:id="@+id/tV11"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget,DuplicateSpeakableTextCheck" />
+
+                            <TextView
+                                android:id="@+id/tV12"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" >
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/tV13"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV14"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV15"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV16"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV17"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tV21"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV22"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV23"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV24"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV25"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV26"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV27"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tV31"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV32"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV33"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV34"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV35"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV36"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV37"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tV41"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV42"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV43"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV44"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV45"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV46"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV47"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tV51"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV52"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV53"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV54"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV55"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV56"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV57"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tV61"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV62"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV63"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV64"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV65"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV66"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="3dp"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+
+                            <TextView
+                                android:id="@+id/tV67"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:width="50dp"
+                                android:background="@drawable/calendar_border_square_rounded"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="@string/default_value_day"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="KeyboardInaccessibleWidget" />
+                        </TableRow>
+                    </TableLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <!--Bottom area-->
+        <RelativeLayout
+            android:id="@+id/calendar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingEnd="0dp"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/text_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="60dp"
+                        android:autofillHints="@string/string_note_def"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:minHeight="48dp"
+                        android:scrollbars="vertical"
+                        android:text="@string/string_note_def"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button_save"
+                        app:layout_constraintRight_toLeftOf="@+id/button_save"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="LabelFor"/>
+
+                    <ImageButton
+                        android:id="@+id/button_save"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_save"
+                        android:contentDescription="@string/save"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_overwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@+id/layout_note"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_overwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/overwork_short"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_leave"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/leave_short"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/text_overwork"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/setting_fragment"
+    tools:context=".SettingsFragment">
+    <ScrollView
+        tools:ignore="UselessParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/fragment_setting_linear_layout_global"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_setting_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/appbar_padding"
+                android:text="@string/Settings"
+                android:textColor="#616161" />
+            <!--Cards-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:Ignore="UselessParent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_cards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables"
+                    android:padding="@dimen/icon_margin">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        tools:ignore="ContentDescription"
+                        android:padding="@dimen/icon_margin"
+                        app:srcCompat="@drawable/ic_card" />
+
+                    <TextView
+                        android:id="@+id/textView_cell_cards"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/settings_list_cards"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Stats-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_stats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables"
+                    android:padding="@dimen/icon_margin">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_stats" />
+
+                    <TextView
+                        android:id="@+id/textView_stats"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/stats"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Cells styles-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_cell_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables"
+                    android:padding="@dimen/icon_margin">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_buy_list" />
+
+                    <TextView
+                        android:id="@+id/textView_cell_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/settings_list_cells_style"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Make shifts-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_make_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_rot" />
+
+                    <TextView
+                        android:id="@+id/set_tv_make_shift"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/SettingsListMakeShifts"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Instructions ?-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_question" />
+
+                    <TextView
+                        android:id="@+id/set_tv_instructions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/instructions"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Backup-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_backup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_restore" />
+
+                    <TextView
+                        android:id="@+id/set_tv_backup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/backup"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Restore-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_restore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_backup" />
+
+                    <TextView
+                        android:id="@+id/set_tv_restore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/restore"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--reminder-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_notif" />
+
+                    <TextView
+                        android:id="@+id/set_tv_reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/reminder"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--qr_code-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_qr_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_qrcode" />
+
+                    <TextView
+                        android:id="@+id/set_tv_qr_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/qr_code"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--sync-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_qr_sync"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_sync" />
+
+                    <TextView
+                        android:id="@+id/set_tv_sync"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/sync"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--About ?-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_question" />
+
+                    <TextView
+                        android:id="@+id/set_tv_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/about_version"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Credits-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/set_ll_credits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:addStatesFromChildren="true"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_copyright" />
+
+                    <TextView
+                        android:id="@+id/set_tv_credits"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/credits"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--User profile (hide)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_user_profile"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_margin"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/acc" />
+                    <TextView
+                        android:id="@+id/textView_user_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/SettingsListUserProfile"
+                        android:padding="@dimen/appbar_padding" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--App author-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_auth"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_margin"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_key" />
+
+                    <TextView
+                        android:id="@+id/textView_auth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/SettingsListAuth"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--App privacy-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_privacy"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_margin"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_privacy" />
+
+                    <TextView
+                        android:id="@+id/textView_privacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/privacyInfo"
+                        android:textColor="#616161" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Logout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_logout"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_margin"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_off" />
+                    <TextView
+                        android:id="@+id/textView_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/SettingsListLogout"
+                        android:padding="@dimen/appbar_padding" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Exit-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/fragment_setting_ll_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/icon_margin"
+                    tools:ignore="UseCompoundDrawables"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="@dimen/icon_margin"
+                        tools:ignore="ContentDescription"
+                        app:srcCompat="@drawable/ic_exit" />
+                    <TextView
+                        android:id="@+id/textView_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/SettingsListExit"
+                        android:padding="@dimen/appbar_padding" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

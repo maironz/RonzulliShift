@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/activity_make_shift"
+    tools:context=".MakeShiftActivity">
+    <!-- progressbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:id="@+id/progressBar_cyclic"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!-- Title -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_make_shift_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/txt_make_shift_title" />
+    </RelativeLayout>
+    <!-- Rotation name -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_make_shift_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_make_shift_description"
+            android:inputType="text"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/et_make_shift_description"
+            tools:ignore="TouchTargetSizeCheck,Autofill" />
+
+    </RelativeLayout>
+    <!-- Help -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_make_shift_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/border_square_rounded_app"
+            android:text="@string/txt_make_shift_rotation_date_instructions" />
+    </RelativeLayout>
+    <!-- date settings -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--container-->
+        <LinearLayout
+            android:id="@+id/rel_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:padding="5dp">
+            <!--start date-->
+            <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:gravity="clip_vertical"
+                    android:lines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="@string/string_start_date_hint" />
+                <Button
+                    android:id="@+id/sa_buttonDateStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_start_date" />
+            </LinearLayout>
+            <!--end date-->
+            <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="@string/string_end_date_hint" />
+                <Button
+                    android:id="@+id/sa_buttonDateEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_end_date" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- Help -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <View android:id="@+id/fakeView"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txt_make_shift_rotation_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/fakeView"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:background="@drawable/border_square_rounded_app"
+            android:text="@string/txt_make_shift_rotation_instructions" />
+        <TextView
+            android:id="@+id/txt_make_shift_rotation_instructions_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:background="@drawable/border_square_rounded_app"
+            android:layout_alignLeft="@id/fakeView"
+            android:layout_alignParentRight="true"
+            android:text="@string/txt_make_shift_rotation_instructions_right" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ms_ll_scroll"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/ms_sv_left"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/border_square_rounded_app"
+            android:padding="10dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/styles_ll_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/ms_sv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/border_square_rounded_app"
+            android:padding="10dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/styles_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--title-->
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_da_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="Dialog"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/icon_margin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/border_square_rounded_app"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            tools:ignore="UselessParent">
+            <!--credit 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--credit 1-->
+                <TextView
+                    android:id="@+id/tv_da_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/about"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/icon_margin">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ok"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+    <!--ok-->
+
+</LinearLayout>

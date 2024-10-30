@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_cards"
+            android:icon="@drawable/ic_card"
+            android:title="@string/settings_list_cards" />
+        <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/ic_stats"
+            android:title="@string/stats" />
+        <item
+            android:id="@+id/nav_cell_style"
+            android:icon="@drawable/ic_buy_list"
+            android:title="@string/settings_list_cells_style" />
+        <item
+            android:id="@+id/nav_make_shift"
+            android:icon="@drawable/ic_rot"
+            android:title="@string/SettingsListMakeShifts" />
+        <item
+            android:id="@+id/nav_instructions"
+            android:icon="@drawable/ic_question"
+            android:title="@string/instructions" />
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/ic_backup"
+            android:title="@string/backup" />
+        <item
+            android:id="@+id/nav_restore"
+            android:icon="@drawable/ic_restore"
+            android:title="@string/restore" />
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@drawable/ic_notif"
+            android:title="@string/reminder" />
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_question"
+            android:title="@string/about_version" />
+        <item
+            android:id="@+id/nav_credits"
+            android:icon="@drawable/ic_copyright"
+            android:title="@string/credits" />
+        <item
+            android:id="@+id/nav_auth"
+            android:icon="@drawable/ic_key"
+            android:title="@string/SettingsListAuth" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/privacyInfo" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/SettingsListExit" />
+    </group>
+</menu>

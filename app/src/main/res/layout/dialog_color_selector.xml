@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dc_tv_color"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:background="#FF8A80" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dc_seek_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/dc_button_red"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentStart="true"
+            android:background="#FF0000" />
+        <SeekBar
+            android:id="@+id/dc_seekBar_red"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_toEndOf="@id/dc_button_red"
+            android:max="255"
+            android:progress="255" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dc_seek_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/dc_button_blue"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentStart="true"
+            android:background="#0000FF" />
+        <SeekBar
+            android:id="@+id/dc_seekBar_blue"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_toEndOf="@id/dc_button_blue"
+            android:max="255"
+            android:progress="138" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dc_seek_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/dc_button_green"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentStart="true"
+            android:background="#00FF00" />
+        <SeekBar
+            android:id="@+id/dc_seekBar_green"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_toEndOf="@id/dc_button_green"
+            android:max="255"
+            android:progress="128" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/dc_button_1"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentStart="true"
+                    android:background="#FF8A80" />
+
+                <Button
+                    android:id="@+id/dc_button_2"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_1"
+                    android:background="#FF80AB" />
+
+                <Button
+                    android:id="@+id/dc_button_3"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_2"
+                    android:background="#EA80FC" />
+
+                <Button
+                    android:id="@+id/dc_button_4"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_3"
+                    android:background="#B388FF" />
+
+                <Button
+                    android:id="@+id/dc_button_5"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_4"
+                    android:background="#8C9EFF" />
+
+                <Button
+                    android:id="@+id/dc_button_6"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_5"
+                    android:background="#82B1FF" />
+
+                <Button
+                    android:id="@+id/dc_button_7"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_6"
+                    android:background="#80D8FF" />
+
+                <Button
+                    android:id="@+id/dc_button_8"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_7"
+                    android:background="#84FFFF" />
+
+                <Button
+                    android:id="@+id/dc_button_9"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_8"
+                    android:background="#A7FFEB" />
+
+                <Button
+                    android:id="@+id/dc_button_10"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_9"
+                    android:background="#B9F6CA" />
+
+                <Button
+                    android:id="@+id/dc_button_11"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_10"
+                    android:background="#CCFF90" />
+
+                <Button
+                    android:id="@+id/dc_button_12"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_11"
+                    android:background="#F4FF81" />
+
+                <Button
+                    android:id="@+id/dc_button_13"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_12"
+                    android:background="#FFFF8D" />
+
+                <Button
+                    android:id="@+id/dc_button_14"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_13"
+                    android:background="#FFE57F" />
+
+                <Button
+                    android:id="@+id/dc_button_15"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_14"
+                    android:background="#FFD180" />
+
+                <Button
+                    android:id="@+id/dc_button_16"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_15"
+                    android:background="#FF9E80" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dc_button1_1"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentStart="true"
+                    android:background="#D50000" />
+
+                <Button
+                    android:id="@+id/dc_button1_2"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_1"
+                    android:background="#C51162" />
+
+                <Button
+                    android:id="@+id/dc_button1_3"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_2"
+                    android:background="#C51162" />
+
+                <Button
+                    android:id="@+id/dc_button1_4"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_3"
+                    android:background="#6200EA" />
+
+                <Button
+                    android:id="@+id/dc_button1_5"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_4"
+                    android:background="#304FFE" />
+
+                <Button
+                    android:id="@+id/dc_button1_6"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button_5"
+                    android:background="#2962FF" />
+
+                <Button
+                    android:id="@+id/dc_button1_7"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_6"
+                    android:background="#0091EA" />
+
+                <Button
+                    android:id="@+id/dc_button1_8"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_7"
+                    android:background="#00B8D4" />
+
+                <Button
+                    android:id="@+id/dc_button1_9"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_8"
+                    android:background="#00BFA5" />
+
+                <Button
+                    android:id="@+id/dc_button1_10"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_9"
+                    android:background="#00C853" />
+
+                <Button
+                    android:id="@+id/dc_button1_11"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_10"
+                    android:background="#64DD17" />
+
+                <Button
+                    android:id="@+id/dc_button1_12"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_11"
+                    android:background="#AEEA00" />
+
+                <Button
+                    android:id="@+id/dc_button1_13"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_12"
+                    android:background="#FFD600" />
+
+                <Button
+                    android:id="@+id/dc_button1_14"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_13"
+                    android:background="#FFAB00" />
+
+                <Button
+                    android:id="@+id/dc_button1_15"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_14"
+                    android:background="#FF6D00" />
+
+                <Button
+                    android:id="@+id/dc_button1_16"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/dc_button1_15"
+                    android:background="#DD2C00" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/dc_button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"/>
+</LinearLayout>
